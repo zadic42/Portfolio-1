@@ -7,47 +7,72 @@ export default function ProjectsPage() {
     const projects = [
         {
             id: 1,
-            title: "Karikku, TharaCart",
+            title: "Karikku",
             description: "Dynamic, responsive e-commerce platform with optimized React.js frontend, secure RESTful APIs, and enhanced UI/UX for seamless shopping experiences.",
             tech: ["React.js", "RESTful API", "TailwindCSS", "Firebase", "JWT", "OAuth 2.0"],
             period: "Aug '25 — Present",
             link: "#",
+            image: "/projects/karikku.png",
             gradient: "from-purple-600 to-indigo-600"
         },
         {
             id: 2,
+            title: "TharaCart",
+            description: "A modern B2C/B2B e-commerce platform where I built the React.js frontend, optimized UI with Tailwind CSS, and integrated secure RESTful APIs with Firebase and JWT/OAuth for a smooth end-to-end shopping experience.",
+            tech: ["React.js", "RESTful API", "TailwindCSS", "Firebase", "JWT", "OAuth 2.0"],
+            period: "Aug '25 — Present",
+            link: "#",
+            image: "/projects/tharacart.png",
+            gradient: "from-purple-600 to-indigo-600"
+        },
+        {
+            id: 3,
+            title: "TharaCart Seller",
+            description: "A streamlined seller dashboard for managing products, orders, and inventory with a fast, responsive interface and secure API integration.",
+            tech: ["React.js", "RESTful API", "TailwindCSS", "Firebase", "JWT", "OAuth 2.0"],
+            period: "Aug '25 — Present",
+            link: "#",
+            image: "/projects/seller.png",
+            gradient: "from-purple-600 to-indigo-600"
+        },
+        {
+            id: 4,
             title: "Keynes",
             description: "Responsive static site built with modern tech stack, featuring modular components, fast performance, and clean UI design.",
             tech: ["React", "TypeScript", "TailwindCSS", "Render"],
             period: "Aug '25 — Aug '25",
             link: "#",
+            image: "/projects/keynes.png",
             gradient: "from-purple-600 to-indigo-600"
         },
         {
-            id: 3,
+            id: 5,
             title: "Ergonnex AI – Agentic Engineering Observability Platform",
             description: "Independently designed and implemented Resource Tracker module with resource planning and sprint management features, full-stack architecture with testing.",
             tech: ["Next.js", "Express.js", "PostgreSQL", "Playwright", "Jest", "Azure DevOps"],
             period: "May '25 — Aug '25",
             link: "#",
+            image: "/projects/ergonnex.svg",
             gradient: "from-purple-600 to-indigo-600"
         },
         {
-            id: 4,
+            id: 6,
             title: "Role Based Authentication",
             description: "Implemented Role-Based Access Control for Admin, User, and Trainer roles with secured APIs, MFA via Google OAuth 2.0, and comprehensive Admin Dashboard.",
             tech: ["MERN Stack", "JWT", "Google OAuth 2.0", "Admin Dashboard", "Trainer Dashboard"],
             period: "Apr '25 — May '25",
             link: "#",
+            image: "/projects/role.png",
             gradient: "from-purple-600 to-indigo-600"
         },
         {
-            id: 5,
+            id: 7,
             title: "Doctor Appointment Web Application",
             description: "MERN-based application with real-time booking, JWT-secured authentication, and role-based access for patients, doctors, and administrators.",
             tech: ["MERN Stack", "JWT", "Real-time", "Payment", "Role-based Access", "Admin", "Docter", "User"],
             period: "Dec '24 — Jan '25",
             link: "#",
+            image: "/projects/doctor.png",
             gradient: "from-purple-600 to-indigo-600"
         }
     ];
@@ -103,26 +128,26 @@ export default function ProjectsPage() {
                                 key={project.id}
                                 onMouseEnter={() => setHoveredProject(project.id)}
                                 onMouseLeave={() => setHoveredProject(null)}
-                                className="group relative h-80 rounded-xl overflow-hidden cursor-pointer transition-all duration-300"
+                                className="group relative rounded-xl overflow-hidden cursor-pointer transition-all duration-300 flex flex-col bg-gradient-to-br from-gray-900 to-black border border-purple-500/20 group-hover:border-purple-500/50"
                             >
-                                {/* Card Background */}
-                                <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-black z-0"></div>
+                                {/* Project Image */}
+                                <div className="relative h-40 overflow-hidden">
+                                    <img
+                                        src={project.image}
+                                        alt={project.title}
+                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                                    />
+                                    {/* Dark Overlay on Image */}
+                                    <div className="absolute inset-0 bg-black/30"></div>
+                                </div>
 
-                                {/* Gradient Background */}
-                                <div
-                                    className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-300 z-0`}
-                                ></div>
-
-                                {/* Border Gradient */}
-                                <div className="absolute inset-0 rounded-xl border border-purple-500/20 group-hover:border-purple-500/50 transition-colors duration-300"></div>
-
-                                {/* Content */}
-                                <div className="relative z-10 p-6 h-full flex flex-col justify-between">
+                                {/* Content Section */}
+                                <div className="flex-1 p-6 flex flex-col justify-between">
                                     <div>
                                         <h3 className="text-xl font-bold mb-2 text-white group-hover:text-purple-300 transition-colors duration-300">
                                             {project.title}
                                         </h3>
-                                        <p className="text-sm text-gray-400 leading-relaxed">
+                                        <p className="text-sm text-gray-300 leading-relaxed">
                                             {project.description}
                                         </p>
                                     </div>
@@ -133,7 +158,7 @@ export default function ProjectsPage() {
                                             {project.tech.map((tech, idx) => (
                                                 <span
                                                     key={idx}
-                                                    className="text-xs px-2 py-1 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/50"
+                                                    className="text-xs px-2 py-1 rounded-full bg-purple-500/30 text-purple-200 border border-purple-500/60 backdrop-blur-sm"
                                                 >
                                                     {tech}
                                                 </span>
