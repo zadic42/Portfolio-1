@@ -94,13 +94,6 @@ export default function ProjectsPage() {
 
                 {/* 🔥 Main Content */}
                 <div className="relative z-20 flex flex-col items-center justify-center px-8 pt-8 max-w-6xl mx-auto">
-
-                    {/* Tagline */}
-                    <div className="flex items-center gap-2 mb-8">
-                        <div className="w-8 h-8 border-2 border-purple-500 rounded"></div>
-                        <span className="text-sm text-purple-400">Explore My Work</span>
-                    </div>
-
                     {/* Main Heading */}
                     <h1 className="text-5xl md:text-6xl font-bold text-center mb-6">
                         Featured <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600">Projects</span>

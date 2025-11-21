@@ -97,7 +97,7 @@ export default function Homepage() {
                     </div>
 
                     {/* Mobile Menu Button */}
-                    <button 
+                    <button
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                         className="md:hidden text-gray-400 hover:text-white z-40"
                     >
@@ -109,25 +109,25 @@ export default function Homepage() {
                 {isMenuOpen && (
                     <div className="fixed inset-0 z-50 md:hidden mt-16 bg-black/80 backdrop-blur-sm">
                         <div className="flex flex-col items-center justify-start space-y-6 pt-8">
-                            <a 
-                                href='#about' 
+                            <a
+                                href='#about'
                                 onClick={() => setIsMenuOpen(false)}
                                 className="text-gray-300 hover:text-white transition px-4 py-2 rounded-full hover:bg-white/5">
                                 About me
                             </a>
-                            <a 
-                                href='#skills' 
+                            <a
+                                href='#skills'
                                 onClick={() => setIsMenuOpen(false)}
                                 className="text-gray-300 hover:text-white transition px-4 py-2 rounded-full hover:bg-white/5">
                                 Skills
                             </a>
-                            <a 
-                                href='#projects' 
+                            <a
+                                href='#projects'
                                 onClick={() => setIsMenuOpen(false)}
                                 className="text-gray-300 hover:text-white transition px-4 py-2 rounded-full hover:bg-white/5">
                                 Projects
                             </a>
-                            
+
                             {/* Mobile Social Links */}
                             <div className="flex items-center space-x-6 pt-6">
                                 <a
@@ -178,10 +178,25 @@ export default function Homepage() {
                             I'm a Full Stack Software Engineer specializing in building modern web applications. Check out my projects and skills.
                         </p>
 
-                        <button className="group relative px-6 sm:px-8 py-3 sm:py-4 rounded-full border border-purple-500/50 hover:border-purple-500 transition-all duration-300 overflow-hidden">
-                            <span className="relative z-10 font-medium text-sm sm:text-base">Learn more</span>
-                            <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-indigo-600 opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
-                        </button>
+                        <a
+                            href="#about"
+                            className="group relative px-6 sm:px-8 py-3 sm:py-4 
+             rounded-full border border-purple-500/50 
+             hover:border-purple-500 transition-all duration-300 
+             overflow-hidden"
+                        >
+                            <span className="relative z-10 font-medium text-sm sm:text-base">
+                                Learn more
+                            </span>
+
+                            <div
+                                className="absolute inset-0 rounded-full
+                 bg-gradient-to-r from-purple-600 to-indigo-600 
+                 opacity-0 group-hover:opacity-20 
+                 transition-opacity duration-300"
+                            />
+                        </a>
+
                     </div>
 
                     {/* 🔥 Floating Tech Icons */}

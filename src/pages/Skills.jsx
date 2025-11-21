@@ -33,13 +33,6 @@ export default function SkillsPage() {
 
             {/* Main Content */}
             <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-16 sm:py-20 lg:py-24">
-                {/* Tagline */}
-                <div className="flex items-center gap-3 mb-6">
-                    <div className="w-8 h-8 border-2 border-purple-500 rounded"></div>
-                    <span className="text-xs sm:text-sm text-purple-400 font-medium">
-                        Have better with NextJS 14
-                    </span>
-                </div>
 
                 {/* Main Heading */}
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center leading-tight px-4">
