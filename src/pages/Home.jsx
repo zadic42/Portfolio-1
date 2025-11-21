@@ -181,9 +181,9 @@ export default function Homepage() {
                         <a
                             href="#about"
                             className="group relative px-6 sm:px-8 py-3 sm:py-4 
-             rounded-full border border-purple-500/50 
-             hover:border-purple-500 transition-all duration-300 
-             overflow-hidden"
+                                rounded-full border border-purple-500/50 
+                                hover:border-purple-500 transition-all duration-300 
+                                overflow-hidden"
                         >
                             <span className="relative z-10 font-medium text-sm sm:text-base">
                                 Learn more
@@ -191,9 +191,9 @@ export default function Homepage() {
 
                             <div
                                 className="absolute inset-0 rounded-full
-                 bg-gradient-to-r from-purple-600 to-indigo-600 
-                 opacity-0 group-hover:opacity-20 
-                 transition-opacity duration-300"
+                                bg-gradient-to-r from-purple-600 to-indigo-600 
+                                opacity-0 group-hover:opacity-20 
+                                transition-opacity duration-300"
                             />
                         </a>
 

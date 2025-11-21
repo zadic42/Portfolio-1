@@ -38,7 +38,7 @@ export default function AboutPage() {
                                 <div className="w-44 h-44 rounded-full overflow-hidden shadow-2xl ring-2 ring-purple-500/40">
                                     <img
                                         className="w-full h-full object-cover"
-                                        src="/dp2.png"
+                                        src="/dp3.png"
                                         alt="Mohammed Sadik — Full Stack Developer"
                                         loading="lazy"
                                     />
