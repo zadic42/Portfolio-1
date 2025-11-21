@@ -11,7 +11,7 @@ export default function LoadingPage() {
     const timer = setTimeout(() => {
       setIsLoading(false);
       document.body.style.overflow = 'unset';
-    }, 2000);
+    }, 4000);
 
     return () => {
       clearTimeout(timer);
