@@ -8,11 +8,11 @@ export default function SkillsPage() {
         { name: 'React', image: '/react.png' },
         { name: 'Node', image: '/node.png' },
         { name: 'Express', image: '/expressjs.png' },
+        { name: 'GraphQl', image: '/graphql.png' },
         { name: 'MySQL', image: '/mysql.png' },
         { name: 'PostgresSQL', image: '/postgresql.png' },
         { name: 'Github', image: '/github.png' },
         { name: 'Firebase', image: '/firebase.png' },
-        { name: 'Javascript', image: '/js.png' },
         { name: 'Typescript', image: '/ts.png' },
     ];
 

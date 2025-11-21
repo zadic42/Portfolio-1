@@ -25,7 +25,7 @@ export default function Homepage() {
 
     return (
         <>
-            <div className="min-h-screen text-white overflow-hidden relative p-4">
+            <div className="min-h-screen text-white overflow-hidden relative p-4 sm:p-1">
 
                 {/* 🔥 Background Video */}
                 <video

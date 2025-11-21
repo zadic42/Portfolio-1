@@ -57,16 +57,6 @@ export default function ProjectsPage() {
         },
         {
             id: 6,
-            title: "Role Based Authentication",
-            description: "Implemented Role-Based Access Control for Admin, User, and Trainer roles with secured APIs, MFA via Google OAuth 2.0, and comprehensive Admin Dashboard.",
-            tech: ["MERN Stack", "JWT", "Google OAuth 2.0", "Admin Dashboard", "Trainer Dashboard"],
-            period: "Apr '25 — May '25",
-            link: "#",
-            image: "/projects/role.png",
-            gradient: "from-purple-600 to-indigo-600"
-        },
-        {
-            id: 7,
             title: "Doctor Appointment Web Application",
             description: "MERN-based application with real-time booking, JWT-secured authentication, and role-based access for patients, doctors, and administrators.",
             tech: ["MERN Stack", "JWT", "Real-time", "Payment", "Role-based Access", "Admin", "Docter", "User"],
